@@ -51,3 +51,34 @@ void List::print()
     }
     */
 }
+int List::sum()
+{
+    Node *ptr = m_head;
+    int tempTotal;
+    while (ptr != NULL)
+    {
+        tempTotal = ptr->m_value + tempTotal;
+        ptr = ptr->m_next;
+    }
+    return tempTotal;
+}
+void List::insert_at_end(int value)
+{
+    Node *ptr = m_head;
+    if (ptr == NULL)
+    {
+        m_head = new Node(value, m_head);
+    }
+    else
+    {
+        while (ptr->m_next != NULL)
+        {
+            ptr = ptr->m_next;
+        }
+    
+        ptr->m_next = new Node(value, NULL);
+    }
+
+
+
+}
