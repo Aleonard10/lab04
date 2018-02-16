@@ -54,7 +54,7 @@ void List::print()
 int List::sum()
 {
     Node *ptr = m_head;
-    int tempTotal;
+    int tempTotal = 0;
     while (ptr != NULL)
     {
         tempTotal = ptr->m_value + tempTotal;
