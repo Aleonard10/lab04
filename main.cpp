@@ -17,7 +17,8 @@ int main()
         list.insert_at_end(a);
     }
     list.print();
-    cout << "sum = " << list.sum() << endl;
+    int sum = list.sum();
+    cout << "sum = " << sum << endl;
 
     return 0;
 }
